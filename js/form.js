@@ -30,7 +30,6 @@ button.addEventListener('click', function (e) {
                 $('#modal-form').fadeOut();
             });
         } else {
-            console.log('no-hola')
             setTimeout(checkModal, 1000);
         }
     }
