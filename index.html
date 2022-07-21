@@ -41,7 +41,7 @@
 	<header>
 
 		<a href="#portada" class='header-logo'>
-			<img src="./img/logo.svg" alt="">
+			<img src="./img/logo-header.svg" alt="">
 		</a>
 
 		<nav>
@@ -72,27 +72,38 @@
 	</header>
 
 	<section id="portada">
-		<div class='border-1'>
-			<div class='portada-contain border-2'>
-				<div class="frase-portada">
+			<div class="img-portada">
+				<article>
+					<h1>Premios Monarca</h1>
+					<h2>Décimo sexta Edición  •  Ciudad de México</h2>
+				</article>
+			</div>
+			<div class='portada-contain'>
+				<article class="frase-portada">
 					<h2><span>“</span>Tal vez necesitábamos separarnos un poco para poder reencontrarnos nuevamente, pero con más amor que antes.<span>”</span></h2>
-					<cite>Leah Raeder</cite>
-				</div>
+					<cite>Leah Raeder.</cite>
+				</article>
 
-				<div class="texto-portada">
+				<article class="texto-portada">
 					<p>Te invitamos a ser parte nuevamente de los Premios Monarca y conocer a los ganadores de este año en Salón Barcelona el 22 de septiembre.</p>
 					<div id="contador"></div>
-					<img class='logos-portada' src="img/logos-tec.svg">
-				</div>
+				</article>
+
+				<article class="ubicacion-portada">
+					<p>Lugar: Salón Barcelona</p>
+					<p>Dirección: Barcelona #26 Col. Juárez, Cuauhtémoc 06600 Ciudad de México, CDMX</p>
+				</article>
 			</div>
-		</div>
 	</section>
 
 	<section id="registro">
 
-		<h2>SECCIÓN DE REGISTRO</h2>
+		<div class="img-form">
+			<h2><span>Sección </span><span class="line-title"></span><span>de registro</span></h2>
+			<img src="img/trofeo-gris.png" alt="">
+		</div>
 
-		<div id="input-validate">
+		<!-- <div id="input-validate">
 			<div id="input-container">
 				<input class="input" maxlength="200" type="text" id="mail-validar" name="mail-validar" required/>
 				<label class="entry__label" for="mail-validar" data-required="*">
@@ -100,7 +111,7 @@
 				</label>
 			</div>
 			<button id="aparecer-form" class="sib-form-block__button">Verificar</button>
-		</div>
+		</div> -->
 
 		<div id="sib-form-container" class="sib-form-container">
 			<div id="error-message" class="sib-form-message-panel">
@@ -164,13 +175,10 @@
 
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
+							<input class="input" maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" data-required="true" required />
 							<label class="entry__label required" for="NOMBRE" data-required="*">
 								Nombre:
 							</label>
-
-							<div class="entry__field">
-								<input class="input" maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" data-required="true" required />
-							</div>
 						</div>
 
 						<label class="entry__error entry__error--primary"></label>
@@ -179,13 +187,10 @@
 
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
+							<input class="input" maxlength="200" type="text" id="APELLIDOS" name="APELLIDOS" autocomplete="off" data-required="true" required>
 							<label class="entry__label required" for="APELLIDOS" data-required="*">
 								Apellidos:
 							</label>
-
-							<div class="entry__field">
-								<input class="input" maxlength="200" type="text" id="APELLIDOS" name="APELLIDOS" autocomplete="off" data-required="true" required>
-							</div>
 						</div>
 
 						<label class="entry__error entry__error--primary"></label>
@@ -194,13 +199,10 @@
 
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
+							<input class="input" maxlength="200" type="text" id="EMPRESA" name="EMPRESA" autocomplete="off" data-required="true" required />
 							<label class="entry__label required" for="EMPRESA" data-required="*">
 								Empresa:
 							</label>
-
-							<div class="entry__field">
-								<input class="input" maxlength="200" type="text" id="EMPRESA" name="EMPRESA" autocomplete="off" data-required="true" required />
-							</div>
 						</div>
 
 						<label class="entry__error entry__error--primary"></label>
@@ -208,13 +210,10 @@
 					</div>
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
+							<input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" data-required="true" required />
 							<label class="entry__label required" for="EMAIL" data-required="*">
 								Correo Electrónico:
 							</label>
-
-							<div class="entry__field">
-								<input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" data-required="true" required />
-							</div>
 						</div>
 
 						<label class="entry__error entry__error--primary"></label>
@@ -222,13 +221,10 @@
 					</div>
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
+							<input class="input" maxlength="200" type="text" id="TELEFONO" name="TELEFONO" autocomplete="off" data-required="true" required />
 							<label class="entry__label required" for="TELEFONO" data-required="*">
 								Teléfono:
 							</label>
-
-							<div class="entry__field">
-								<input class="input" maxlength="200" type="text" id="TELEFONO" name="TELEFONO" autocomplete="off" data-required="true" required />
-							</div>
 						</div>
 
 						<label class="entry__error entry__error--primary"></label>
@@ -236,13 +232,10 @@
 					</div>
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
+							<input class="input gray" maxlength="200" type="text" id="NOMBRE_ASISTENTE" name="NOMBRE_ASISTENTE" autocomplete="off" />
 							<label class="entry__label" for="NOMBRE_ASISTENTE">
 								Nombre Asistente:
 							</label>
-
-							<div class="entry__field">
-								<input class="input gray" maxlength="200" type="text" id="NOMBRE_ASISTENTE" name="NOMBRE_ASISTENTE" autocomplete="off" />
-							</div>
 						</div>
 
 						<label class="entry__error entry__error--primary"></label>
@@ -250,13 +243,10 @@
 					</div>
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
+							<input class="input gray" maxlength="200" type="text" id="TELEFONO_ASISTENTE" name="TELEFONO_ASISTENTE" autocomplete="off">
 							<label class="entry__label" for="TELEFONO_ASISTENTE">
 								Telefono Asistente:
 							</label>
-
-							<div class="entry__field">
-								<input class="input gray" maxlength="200" type="text" id="TELEFONO_ASISTENTE" name="TELEFONO_ASISTENTE" autocomplete="off">
-							</div>
 						</div>
 
 						<label class="entry__error entry__error--primary"></label>
@@ -264,20 +254,15 @@
 					</div>
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
+							<input class="input gray" maxlength="200" type="text" id="CORREO_ASISTENTE" name="CORREO_ASISTENTE" autocomplete="off">
 							<label class="entry__label" for="CORREO_ASISTENTE">
 								Correo Asistente:
 							</label>
-
-							<div class="entry__field">
-								<input class="input gray" maxlength="200" type="text" id="CORREO_ASISTENTE" name="CORREO_ASISTENTE" autocomplete="off">
-							</div>
 						</div>
 
 						<label class="entry__error entry__error--primary"></label>
 
 					</div>
-
-					<span class="span-form">**Invitación personal e instransferible. Fecha limite de registro 14 de Septiembre</span>
 
 					<button id="button-form" class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form"
 						type="submit">
@@ -286,11 +271,13 @@
 							<path
 								d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
 						</svg>
-						Enviar
+						Finalizar Registro
 					</button>
 
 					<input type="text" name="email_address_check" value="" class="input--hidden">
 					<input type="hidden" name="locale" value="en">
+
+					<span class="span-form">**Invitación personal e instransferible. Fecha limite de registro 14 de Septiembre</span>
 				</form>
 			</div>
 		</div>
@@ -301,10 +288,8 @@
 		<div class='border-1'>
 			<div class='border-2 info'>
 				<img src="img/logo-info.svg" alt="logo información">
-				<p>Nada nos entusiasma más que volver a compartir el gran honor de reconocer a los mejores
-					distribuidores de tecnología a nivel nacional en un evento único y especial.</p>
-				<p>Para esta emocionante 16va edición de Premios Monarca nos adentraremos en un increíble recinto
-					histórico.</p>
+				<p>Nada nos entusiasma más que volver a compartir el gran honor de reconocer a los mejores distribuidores de tecnología a nivel nacional en un evento único y especial.</p>
+				<p>Para esta emocionante 16va edición de Premios Monarca nos adentraremos en un increíble recinto histórico.</p>
 				<p>Acompáñanos a seguir escribiendo juntos esta gran historia.</p>
 				<em>¡Bienvenidos!</em>
 			</div>
@@ -351,7 +336,7 @@
 
 	</section>
 
-	<section id="galardon">
+	<!-- <section id="galardon">
 		<div class="pill">
 			<article>
 				<h3>Nuestro máximo galardón</h3>
@@ -362,7 +347,7 @@
 				<img src="img/Trofeos.png" alt="">
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section id="galeria">
 
