@@ -126,7 +126,7 @@ body,html {
 #login-section{
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background: url('../img/museo.jpg') no-repeat center;
 	background-size: cover;
 }
@@ -157,7 +157,7 @@ body,html {
 			position: relative;
 		}
 		input[type='text']{
-			width: 100%;
+			width: calc(100% - 16px);
 			height: 30px;
 			border: none;
 			padding-left: 15px;
@@ -1342,6 +1342,7 @@ nav{
 	}
 	.login-container{
 		width: 90%;
+		min-width: 200px;
 	}
 	.log-btn{
 		width: 100%;

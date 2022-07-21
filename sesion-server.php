@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$db = new mysqli("localhost", "DBasus20admin", "#elevate20x2", "asus_elevate");
+$db = new mysqli("localhost", "u210807845_u210807845_6qD", "dbMonarca2022", "u210807845_inteldb");
 
 //echo mysqli_ping($db);
 
