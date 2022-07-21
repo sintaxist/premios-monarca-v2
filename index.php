@@ -1,3 +1,11 @@
+<?php
+session_start();
+if ( isset($_SESSION['correousuario']) ){
+	//echo "Bienvenido ".$_SESSION['correousuario'];
+} else{
+	header("location: login.php");
+}
+?>
 <!doctype html>
 <html>
 
@@ -41,7 +49,7 @@
 	<header>
 
 		<a href="#portada" class='header-logo'>
-			<img src="./img/logo-header.svg" alt="">
+			<img src="./img/logo-header.svg" alt="logo">
 		</a>
 
 		<nav>
@@ -69,6 +77,9 @@
 			<li><a href="#galardon" class="">Galardón</a></li>
 			<li><a href="#galeria" class="">Galería</a></li>
 		</ul>
+
+		<a class='button-sesion' href="destroy.php">Cerrar Sesión</a>
+		
 	</header>
 
 	<section id="portada">
