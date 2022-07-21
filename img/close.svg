@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.61 68.61"><defs><style>.cls-1{fill:#dcae7e;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M67.17,60.2,41.27,34.31l25.9-25.9a4.93,4.93,0,0,0-7-7L34.31,27.34,8.41,1.44a4.93,4.93,0,0,0-7,7l25.9,25.9L1.44,60.2a4.93,4.93,0,0,0,7,7l25.9-25.9L60.2,67.17a4.93,4.93,0,0,0,7-7Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 68.6 68.6" style="enable-background:new 0 0 68.6 68.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4258FF;}
+</style>
+<g id="Capa_2">
+	<g id="Layer_3">
+		<path class="st0" d="M67.2,60.2L41.3,34.3L67.2,8.4c1.9-1.9,1.9-5.1,0-7s-5.1-1.9-7,0L34.3,27.3L8.4,1.4c-1.9-1.9-5.1-1.9-7,0
+			s-1.9,5.1,0,7l25.9,25.9L1.4,60.2c-1.9,1.9-1.9,5.1,0,7c1.9,1.9,5.1,1.9,7,0l0,0l25.9-25.9l25.9,25.9c1.9,1.9,5.1,1.9,7,0
+			C69.1,65.2,69.1,62.1,67.2,60.2L67.2,60.2L67.2,60.2z"/>
+	</g>
+</g>
+</svg>
