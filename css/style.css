@@ -463,24 +463,54 @@ nav a.active {
 
 .p-form {
   font-size: var(--font-3);
-  margin: var(--margin-30) 0px;
+  margin: var(--margin-60) 0px;
   color: var(--black);
 }
 
 .select-container {
   display: flex;
-  align-items: flex-end;
-  justify-content: end;
+  align-items: flex-start;
+  justify-content: start;
 }
 .select-container .entry__choice {
-  margin-left: var(--margin-30);
+  margin-right: var(--margin-30);
+}
+.select-container input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.select-container input[type=radio] + .radio-label:before {
+  content: "";
+  background: var(--black);
+  border-radius: 170px;
+  border: 1px solid var(--black);
+  display: inline-block;
+  width: 1.4rem;
+  min-width: 1.4rem;
+  min-height: 1.4rem;
+  height: 1.4rem;
+  position: relative;
+  top: -2px;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.select-container input[type=radio]:checked + .radio-label:before {
+  background: var(--blue-2);
+  box-shadow: inset 0 0 0 4px var(--black);
+}
+.select-container input[type=radio]:focus + .radio-label:before {
+  outline: none;
 }
 .select-container label {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-direction: row-reverse;
-  gap: 5px;
+  gap: 15px;
   color: var(--black);
+  font-size: var(--font-4);
 }
 
 .form__label-row {
@@ -521,6 +551,13 @@ nav a.active {
   top: -13px;
   font-size: 12px;
 }
+.form__label-row input:valid {
+  outline: none;
+}
+.form__label-row input:valid + label {
+  top: -13px;
+  font-size: 12px;
+}
 
 .required {
   margin-right: 15px;
@@ -544,36 +581,40 @@ nav a.active {
 }
 
 .span-form {
-  font-size: var(--font-4);
+  font-size: 12px;
   color: var(--gold);
   display: block;
   float: right;
-  margin: var(--margin-30) 0px;
+  margin: var(--margin-60) 0px 0px;
   letter-spacing: 1px;
 }
 
 .sib-form-block__button {
   display: flex;
+  margin: var(--margin-30) 0px;
   flex-direction: row-reverse;
   gap: 15px;
   clear: both;
-  font-size: var(--font-3);
-  color: #fff;
-  background-color: var(--gold);
+  font-size: var(--font-4);
+  color: var(--white);
+  background-color: var(--black);
   border: none;
   padding: 10px 35px;
+  margin: auto;
   cursor: pointer;
   transition: all 0.3s;
+  border: 1px solid transparent;
 }
 .sib-form-block__button svg {
   width: 0px;
 }
 .sib-form-block__button svg path {
-  fill: #fff;
+  fill: white;
 }
 .sib-form-block__button:hover {
-  color: var(--gold);
+  color: var(--black);
   background-color: transparent;
+  border: 1px solid var(--black);
 }
 
 .spinner {
@@ -1193,12 +1234,6 @@ footer img {
     width: 100%;
     text-align: center;
   }
-  #input-validate {
-    width: 92%;
-  }
-  #sib-form-container {
-    min-width: 250px;
-  }
   .texto-portada {
     width: 100%;
   }
@@ -1210,6 +1245,19 @@ footer img {
     min-width: 100px;
     margin-top: var(--margin-60);
     margin-bottom: 6%;
+  }
+  #registro {
+    flex-direction: column;
+  }
+  .img-form {
+    width: 100%;
+  }
+  .img-form img {
+    max-width: 200px;
+    padding-bottom: 4%;
+  }
+  #sib-form-container {
+    width: 92%;
   }
   #informacion {
     display: flex;
@@ -1322,20 +1370,8 @@ footer img {
     --font-3: 1rem;
   }
   .select-container {
-    align-items: flex-start;
-    justify-content: start;
     flex-direction: column;
-  }
-  .select-container label {
-    font-size: var(--font-4);
-  }
-  .select-container .entry__choice {
-    margin-left: 0px;
-    margin-bottom: 15px;
-  }
-  .p-form {
-    font-size: var(--font-4);
-    margin-top: 0px;
+    gap: 20px;
   }
   .triggers-gal .trigger {
     padding: 10px;

@@ -62,59 +62,59 @@ function validamail ( email ) {
    return RegExPattern.test( email );
 }
 
-button2.addEventListener('click', function(e){
+// button2.addEventListener('click', function(e){
 
-    let firstInput = document.getElementById('mail-validar');
+//     let firstInput = document.getElementById('mail-validar');
 
-    let container = document.getElementById('input-container');
+//     let container = document.getElementById('input-container');
 
-    if (!validamail(firstInput.value)) {
+//     if (!validamail(firstInput.value)) {
 
-        $('#input-container p').remove();
+//         $('#input-container p').remove();
 
-        let createError = document.createElement('p');
-        createError.classList.add('error');
-        createError.innerText = 'Porfavor Ingresa un mail valido';
-        container.appendChild(createError);
-        container.classList.add('input-error');
+//         let createError = document.createElement('p');
+//         createError.classList.add('error');
+//         createError.innerText = 'Porfavor Ingresa un mail valido';
+//         container.appendChild(createError);
+//         container.classList.add('input-error');
 
-        firstInput.addEventListener('focus', function(){
-            container.classList.remove('input-error');
-            createError.classList.remove('error');
-        })
+//         firstInput.addEventListener('focus', function(){
+//             container.classList.remove('input-error');
+//             createError.classList.remove('error');
+//         })
 
-    } else {
+//     } else {
 
-        let correo = firstInput.value;
+//         let correo = firstInput.value;
 
-        let result = correo.toLowerCase();
+//         let result = correo.toLowerCase();
 
-        const validarExistencia = ArrayLower.includes(result)
+//         const validarExistencia = ArrayLower.includes(result)
 
-        if(validarExistencia == false){
+//         if(validarExistencia == false){
 
-            $('#input-container p').remove();
+//             $('#input-container p').remove();
 
-            let createError = document.createElement('p');
-            createError.classList.add('error', 'errorExist');
-            createError.innerText = 'Lo sentimos no estas en la lista de invitados';
-            container.appendChild(createError);
-            container.classList.add('input-error');
+//             let createError = document.createElement('p');
+//             createError.classList.add('error', 'errorExist');
+//             createError.innerText = 'Lo sentimos no estas en la lista de invitados';
+//             container.appendChild(createError);
+//             container.classList.add('input-error');
 
-        }else{
+//         }else{
 
-            e.preventDefault();
+//             e.preventDefault();
 
-            let divForm = document.getElementById('sib-form-container');
+//             let divForm = document.getElementById('sib-form-container');
 
-            let inputMail = document.getElementById('EMAIL');
+//             let inputMail = document.getElementById('EMAIL');
 
-            let father = document.getElementById('input-validate');
-            father.style.display = 'none'
+//             let father = document.getElementById('input-validate');
+//             father.style.display = 'none'
 
-            divForm.classList.add('mostrar');
+//             divForm.classList.add('mostrar');
 
-            inputMail.value = firstInput.value;
-        }
-    }
-})
+//             inputMail.value = firstInput.value;
+//         }
+//     }
+// })

@@ -495,22 +495,67 @@ nav{
 }
 .p-form{
 	font-size: var(--font-3);
-	margin: var(--margin-30) 0px;
+	margin: var(--margin-60) 0px;
 	color: var(--black);
 }
-.select-container{
+.select-container {
 	display: flex;
-	align-items: flex-end;
-	justify-content: end;
-	.entry__choice{
-		margin-left: var(--margin-30);
+	align-items: flex-start;
+	justify-content: start;
+
+	.entry__choice {
+		margin-right: var(--margin-30);
 	}
-	label{
+
+	input[type="radio"] {
+		position: absolute;
+		opacity: 0;
+		+ .radio-label {
+			&:before {
+			  content: '';
+			  background: var(--black);
+			  border-radius: 170px;
+			  border: 1px solid var(--black);
+			  display: inline-block;
+			  width: 1.4rem;
+			  min-width: 1.4rem;
+			  min-height: 1.4rem;
+			  height: 1.4rem;
+			  position: relative;
+			  top: -2px;
+			  margin-right: 1em; 
+			  vertical-align: top;
+			  cursor: pointer;
+			  text-align: center;
+			  transition: all 250ms ease;
+			}
+		}
+
+		&:checked {
+			+ .radio-label {
+			  &:before {
+				background: var(--blue-2);
+				box-shadow: inset 0 0 0 4px var(--black);
+			  }
+			}
+		}
+
+		&:focus {
+			+ .radio-label {
+			  &:before {
+				outline: none;
+			  }
+			}
+		}
+	}
+
+	label {
 		display: flex;
-		align-items:  baseline;
+		align-items: center;
 		flex-direction: row-reverse;
-		gap: 5px;
+		gap: 15px;
 		color: var(--black);
+		font-size: var(--font-4);
 	}
 }
 .form__label-row{
@@ -547,6 +592,13 @@ nav{
 				font-size: 12px;
 			}
 		}
+		&:valid{
+			outline: none;
+			+ label{
+				top: -13px;
+				font-size: 12px;
+			}
+		}
 	}
 }
 .required{
@@ -568,34 +620,38 @@ nav{
 	display: none;
 }
 .span-form{
-	font-size: var(--font-4);
+	font-size: 12px;
 	color: var(--gold);
 	display: block;
 	float: right;
-	margin: var(--margin-30) 0px;
+	margin: var(--margin-60) 0px 0px;
 	letter-spacing: 1px;
 }
 .sib-form-block__button{
 	display: flex;
+	margin: var(--margin-30) 0px;
 	flex-direction: row-reverse;
 	gap: 15px;
 	clear: both;
-	font-size: var(--font-3);
-	color: #fff;
-	background-color: var(--gold);
+	font-size: var(--font-4);
+	color: var(--white);
+	background-color: var(--black);
 	border: none;
 	padding: 10px 35px;
+	margin: auto;
 	cursor: pointer;
 	transition: all .3s;
+	border: 1px solid transparent;
 	svg{
 		width: 0px;
 		path{
-			fill: #fff;
+			fill: white;
 		}
 	}
 	&:hover{
-		color: var(--gold);
+		color: var(--black);
 		background-color: transparent;
+		border: 1px solid var(--black);
 	}
 }
 .spinner{
@@ -1184,12 +1240,6 @@ footer {
 		width: 100%;
 		text-align: center;
 	}
-	#input-validate{
-		width: 92%;
-	}
-	#sib-form-container{
-		min-width: 250px;
-	}
 	.texto-portada {
 		width: 100%;
 		p {
@@ -1202,6 +1252,25 @@ footer {
 			margin-bottom: 6%;
 		}
 	}
+	#registro{
+		flex-direction: column;
+	}
+	.img-form{
+		width: 100%;
+		img{
+			max-width: 200px;
+			padding-bottom: 4%;
+		}
+	}
+	#sib-form-container{
+		width: 92%;
+	}
+	// #input-validate{
+	// 	width: 92%;
+	// }
+	// #sib-form-container{
+	// 	min-width: 250px;
+	// }
 	#informacion{
 		display: flex;
 		flex-direction: column;
@@ -1313,20 +1382,8 @@ footer {
 		--font-3: 1rem;
 	}
 	.select-container{
-		align-items: flex-start;
-		justify-content: start;
 		flex-direction: column;
-		label{
-			font-size: var(--font-4);
-		}
-		.entry__choice{
-			margin-left: 0px;
-			margin-bottom: 15px;
-		}
-	}
-	.p-form{
-		font-size: var(--font-4);
-		margin-top: 0px;
+		gap: 20px;
 	}
 	.triggers-gal{
 		.trigger{

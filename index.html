@@ -146,23 +146,28 @@
 				<form id="sib-form" method="POST"
 					action="https://dc8b637e.sibforms.com/serve/MUIEAGWqd438fmpRs7idL3SSvtx847eueOOu-SO5zHO3y6Vj57tNmbMau2bCc1b_7w8qZJCwfLmtx0YM5nwtJ-t90HzknxTw6Q-sCkBPrlnow3rDua4uTkqkVjhr11ZB9sdxsrI9G0OnYfUJUBG8Uye0kTrrsgN1jhFJ9wsQWL-zhihS9rDiVtA07fft0ADBLlkLSK1xhVw0bj0D"
 					data-type="subscription">
+
+					<p class="p-form">Nos complace contar con su presencia:</p>
+
 					<div class="sib-radiobutton-group sib-form-block" data-required="true">
 						<div class="form__entry entry_mcq">
 							<div>
 
-								<div class="select-container">
+								<div class="select-container radio">
 									<div class="entry__choice radio-option option-1">
-										<label>
-											<input type="radio" name="PARTICIPACION" class="input_replaced" value="1" required>
-											<span class="radio-button"></span><span>Si participaré en el evento:</span>
-										</label>
+											<input id='radio-1' type="radio" name="PARTICIPACION" class="input_replaced" value="1" required>
+											<label for='radio-1' class="radio-button radio-label"></span><span>Si participaré en el evento:</label>
 									</div>
-									<div class="entry__choice radio-option option-2">
+									<div class="entry__choice radio-option option-1">
+											<input id='radio-2' type="radio" name="PARTICIPACION" class="input_replaced" value="2" required>
+											<label for='radio-2' class="radio-button radio-label"></span><span>No me es posible participar:</label>
+									</div>
+									<!-- <div class="entry__choice radio-option option-2">
 										<label>
 											<input type="radio" name="PARTICIPACION" class="input_replaced" value="2" required>
 											<span class="radio-button"></span><span>No me es posible participar:</span>
 										</label>
-									</div>
+									</div> -->
 								</div>
 							</div>
 
@@ -170,8 +175,6 @@
 
 						</div>
 					</div>
-
-					<p class="p-form">Nos complace contar con su presencia:</p>
 
 					<div class="form__entry entry_block">
 						<div class="form__label-row ">
@@ -283,6 +286,11 @@
 		</div>
 
 	</section>
+
+	<div class="divider">
+		<img src="./img/intel-hp.svg" alt="logo divider">
+		<span>© Copyright 2022 HP Development Company. L.P.</span>
+	</div>
 
 	<section class="seccion" id="informacion">
 		<div class='border-1'>
