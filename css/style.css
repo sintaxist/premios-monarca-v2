@@ -239,7 +239,14 @@ body, html {
   border: 1px solid transparent;
   font-size: var(--font-4);
   margin: auto;
-  padding: 5px 25px;
+  padding: 10px 35px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.log-btn:hover {
+  background: transparent;
+  color: var(--light-blue-1);
+  border-color: var(--light-blue-1);
 }
 
 header {
@@ -347,7 +354,7 @@ nav a.active {
   transform: rotate(-45deg);
 }
 
-#menu-mobile {
+.menu-mobile {
   position: absolute;
   display: block;
   height: 100vh;
@@ -358,17 +365,18 @@ nav a.active {
   right: -120%;
   transition: all ease 0.5s;
 }
-#menu-mobile.open {
+.menu-mobile.open {
   right: 0;
 }
-#menu-mobile li {
+.menu-mobile li {
   display: block;
   position: relative;
   width: 100%;
   height: 8%;
   margin: 5px 0 0 0;
+  text-align: center;
 }
-#menu-mobile li a {
+.menu-mobile li a {
   display: block;
   font-size: var(--font-2);
   font-weight: 600;
@@ -378,8 +386,9 @@ nav a.active {
   width: 100%;
   height: 100%;
   opacity: 0.7;
+  text-align: center;
 }
-#menu-mobile li a:after {
+.menu-mobile li a:after {
   display: block;
   content: "";
   position: absolute;
@@ -390,14 +399,45 @@ nav a.active {
   left: 50%;
   transition: ease all 0.5s;
 }
-#menu-mobile li a:hover {
+.menu-mobile li a:hover {
   opacity: 1;
 }
-#menu-mobile li a:hover:after {
+.menu-mobile li a:hover:after {
   width: 70%;
 }
-#menu-mobile li:first-child {
+.menu-mobile li a.active {
+  color: var(--purple-1);
+}
+.menu-mobile li:first-child {
   margin: 80px 0 0 0;
+}
+
+#cerrar-sesion {
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  height: unset;
+}
+#cerrar-sesion a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: var(--purple-1);
+  border: 1px solid transparent;
+  text-align: center;
+  padding: 10px 45px;
+  margin: auto;
+  transition: all 0.3s;
+}
+#cerrar-sesion a:after {
+  display: none;
+}
+#cerrar-sesion a:hover {
+  color: var(--purple-1);
+  background-color: transparent;
+  border-color: var(--purple-1);
 }
 
 #portada {

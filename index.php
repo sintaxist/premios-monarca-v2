@@ -25,7 +25,7 @@ if ( isset($_SESSION['correousuario']) ){
 	<meta name=“twitter:image” content=“http://premiosmonarcahp.com/img/graph.jpg”>
 	<meta name=“twitter:image:alt” content="Premios Monarca HP">
 	<meta name=“twitter:url” content=“premiosmonarcahp.com” />
-	
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -68,18 +68,20 @@ if ( isset($_SESSION['correousuario']) ){
 			<b></b>
 		</a>
 
-		<ul id="menu-mobile">
-			<li><a href="#portada" class="">Inicio</a></li>
+		<ul id="menu-mobile" class='menu-mobile'>
+			<li><a href="#portada" class="active">Inicio</a></li>
 			<li><a href="#registro" class="">Registro</a></li>
 			<li><a href="#informacion" class="">Información</a></li>
 			<li><a href="#venue" class="">Venue</a></li>
 			<li><a href="#conductores" class="">Conductores</a></li>
 			<li><a href="#galardon" class="">Galardón</a></li>
 			<li><a href="#galeria" class="">Galería</a></li>
+
+			<li id='cerrar-sesion'><a href="destroy.php">Cerrar Sesión</a></li>
 		</ul>
 
 		<a class='button-sesion' href="destroy.php">Cerrar Sesión</a>
-		
+
 	</header>
 
 	<section id="portada">
@@ -113,16 +115,6 @@ if ( isset($_SESSION['correousuario']) ){
 			<h2><span>Sección </span><span class="line-title"></span><span>de registro</span></h2>
 			<img src="img/trofeo-gris.png" alt="">
 		</div>
-
-		<!-- <div id="input-validate">
-			<div id="input-container">
-				<input class="input" maxlength="200" type="text" id="mail-validar" name="mail-validar" required/>
-				<label class="entry__label" for="mail-validar" data-required="*">
-					Correo electrónico:
-				</label>
-			</div>
-			<button id="aparecer-form" class="sib-form-block__button">Verificar</button>
-		</div> -->
 
 		<div id="sib-form-container" class="sib-form-container">
 			<div id="error-message" class="sib-form-message-panel">
@@ -376,7 +368,7 @@ if ( isset($_SESSION['correousuario']) ){
 
 			</div>
 		</article>
-		
+
 		<div class="divider">
 			<img src="./img/intel-hp.svg" alt="logo divider">
 			<span>© Copyright 2022 HP Development Company. L.P.</span>
@@ -421,7 +413,7 @@ if ( isset($_SESSION['correousuario']) ){
 			<p>Para condecorar a los ganadores de este año, el reconocimiento representa una bella mariposa monarca, la estatuilla en hoja de latón dorado está inspirada en las similitudes del origami y las mariposas monarca.</p>
 		</article>
 		<div class="trofeo-container">
-			<img src="img/Trofeos.png" alt="trofeos">
+			<img src="img/trofeos.png" alt="trofeos">
 		</div>
 	</section>
 
@@ -438,7 +430,7 @@ if ( isset($_SESSION['correousuario']) ){
 				<a class='trigger' href="#" id="trigger-video">
 					Videomemoria 15ta Edición
 				</a>
-	
+
 				<a class='trigger' href="#" id="trigger-galeria">
 					Galería 15ta Edición
 				</a>
