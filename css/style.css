@@ -502,6 +502,7 @@ nav a.active {
 
 .texto-portada {
   padding: 4% 0px;
+  padding-bottom: 0px;
   background-color: var(--light-blue-3);
 }
 .texto-portada p {
