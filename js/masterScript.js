@@ -74,12 +74,11 @@ $('#seeMap').on('click', function () {
 })
 
 $('.overlay').on('click', function () {
-  $('body').removeClass('no-scroll');
   $(this).fadeOut();
   $('.modal:visible').fadeOut();
 });
+
 $('.close').on('click', function () {
-  $('body').removeClass('no-scroll');
   $(this).parents('.modal').fadeOut();
   $('.overlay').fadeOut();
 });

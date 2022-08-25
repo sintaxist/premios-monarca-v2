@@ -16,7 +16,7 @@
 	<meta name=“twitter:image” content=“http://premiosmonarcahp.com/img/graph.jpg”>
 	<meta name=“twitter:image:alt” content="Premios Monarca HP">
 	<meta name=“twitter:url” content=“premiosmonarcahp.com” />
-	
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -40,7 +40,7 @@
 <section id="login-section">
 	<div class="login-container">
         <img src="./img/logo-header.svg" alt="logo">
-		<form method="post" action="sesion.php" id="input-validate">
+		<form method="post" action="sesion-server.php" id="input-validate">
             <h2>Ingresa tu correo par acceder a la pagina</h2>
 			<div id="input-container">
                 <input id="mail-validar" type="text" name="correo" required class="input-login">

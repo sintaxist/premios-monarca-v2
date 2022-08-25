@@ -11,16 +11,16 @@ if ( isset($_SESSION['correousuario']) ){
 
 <head>
 	<meta charset="UTF-8">
-	<title>Premios Monarca - 16va edición</title>
+	<title>Premios Monarca - 16a edición</title>
 	<meta name=“description” content="Llegó el momento de volver a compartir el gran honor de reconocer a los mejores distribuidores de tecnología a nivel nacional en un evento único y especial"/>
 
-	<meta property=“og:title” content="Premios Monarca - 16va edición" />
+	<meta property=“og:title” content="Premios Monarca - 16a edición" />
 	<meta property=“og:description” content="Llegó el momento de volver a compartir el gran honor de reconocer a los mejores distribuidores de tecnología a nivel nacional en un evento único y especial" />
 	<meta property=“og:image” content=“http://premiosmonarcahp.com/img/graph.jpg” />
 	<meta property=“og:url” content=“premiosmonarcahp.com” >
 
-	<meta name=“twitter:card” content="Premios Monarca - 16va edición">
-	<meta name=“twitter:title” content="Premios Monarca - 16va edición">
+	<meta name=“twitter:card” content="Premios Monarca - 16a edición">
+	<meta name=“twitter:title” content="Premios Monarca - 16a edición">
 	<meta name=“twitter:description” content="Llegó el momento de volver a compartir el gran honor de reconocer a los mejores distribuidores de tecnología a nivel nacional en un evento único y especial">
 	<meta name=“twitter:image” content=“http://premiosmonarcahp.com/img/graph.jpg”>
 	<meta name=“twitter:image:alt” content="Premios Monarca HP">
@@ -88,7 +88,7 @@ if ( isset($_SESSION['correousuario']) ){
 			<div class="img-portada">
 				<article>
 					<h1>Premios Monarca</h1>
-					<h2>Décimo sexta Edición  •  Ciudad de México</h2>
+					<h2>16<sup>a</sup> edición  •  Ciudad de México</h2>
 				</article>
 			</div>
 			<div class='portada-contain'>
@@ -108,6 +108,11 @@ if ( isset($_SESSION['correousuario']) ){
 				</article>
 			</div>
 	</section>
+
+	<div class="divider">
+		<img src="./img/intel-hp.svg" alt="logo divider">
+		<span>© Copyright 2022 HP Development Company. L.P.</span>
+	</div>
 
 	<section id="registro">
 
@@ -161,7 +166,7 @@ if ( isset($_SESSION['correousuario']) ){
 											<input id='radio-1' type="radio" name="PARTICIPACION" class="input_replaced" value="1" required>
 											<label for='radio-1' class="radio-button radio-label"></span><span>Si participaré en el evento:</label>
 									</div>
-									<div class="entry__choice radio-option option-1">
+									<div class="entry__choice radio-option option-2">
 											<input id='radio-2' type="radio" name="PARTICIPACION" class="input_replaced" value="2" required>
 											<label for='radio-2' class="radio-button radio-label"></span><span>No me es posible participar:</label>
 									</div>
@@ -305,7 +310,7 @@ if ( isset($_SESSION['correousuario']) ){
 			<article>
 				<em>¡Bienvenidos!</em>
 				<p>Nada nos entusiasma más que volver a compartir el gran honor de reconocer a los mejores distribuidores de tecnología a nivel nacional en un evento único y especial.</p>
-				<p>Para esta emocionante 16va edición de Premios Monarca nos adentraremos en un increíble recinto histórico.</p>
+				<p>Para esta emocionante 16<sup>a</sup> edición de Premios Monarca nos adentraremos en un increíble recinto histórico.</p>
 				<p>Acompáñanos a seguir escribiendo juntos esta gran historia.</p>
 			</article>
 
@@ -428,11 +433,11 @@ if ( isset($_SESSION['correousuario']) ){
 
 			<div class="triggers">
 				<a class='trigger' href="#" id="trigger-video">
-					Videomemoria 15ta Edición
+					Videomemoria 15<sup>a</sup> Edición
 				</a>
 
 				<a class='trigger' href="#" id="trigger-galeria">
-					Galería 15ta Edición
+					Galería 15<sup>a</sup> Edición
 				</a>
 			</div>
 
@@ -447,7 +452,7 @@ if ( isset($_SESSION['correousuario']) ){
 		<span>© Copyright 2022 HP Development Company. L.P.</span>
 	</footer>
 
-	<div class="overlay overlay-black"></div>
+	<div id='overlay-black' class="overlay overlay-black"></div>
 
 	<div class="overlay overlay-white"></div>
 
@@ -458,9 +463,10 @@ if ( isset($_SESSION['correousuario']) ){
 	</div>
 
 	<div id="videomemoria" class="modal">
-		<img class="close" src="img/close.svg" alt="">
-		<iframe src="videomemoria.html" id="form-holder" width="100%" height="100%" frameborder="0"
-			scrolling="no"></iframe>
+		<img id='pause-video' class="close" src="img/close.svg" alt="">
+		<video id="videoModal" class="video-modal" controls>
+			<source src="./video/videomemoria15va.mp4" type="video/mp4">
+		</video>
 	</div>
 
 	<div id="mapa" class="modal">
@@ -472,7 +478,7 @@ if ( isset($_SESSION['correousuario']) ){
 		<img class="close" src="img/close.svg" alt="">
 		<div class="border-2">
 			<div class="asistir option">
-				<h4>Agradecemos su asistencia a nuestra 16ta entrega de premios Monarca.</h4>
+				<h4>Agradecemos su asistencia a nuestra 16<sup>a</sup> entrega de premios Monarca.</h4>
 				<h4>En breve recibirá un correo confirmando su participación.</h4>
 				<h4>En caso de no recibir la confirmación favor de mandarnos un correo a:</h4>
 				<a href="malito:iyali@weil.com.mx">iyali@weil.com.mx</a>
@@ -483,6 +489,7 @@ if ( isset($_SESSION['correousuario']) ){
 				<a href="malito:iyali@weil.com.mx">iyali@weil.com.mx</a>
 			</div>
 			<p>¡GRACIAS!</p>
+			<em>FAVOR DE REVISAR SU BANDEJA DE CORREO NO DESEADO</em>
 		</div>
 	</div>
 
@@ -494,6 +501,19 @@ if ( isset($_SESSION['correousuario']) ){
 	<script type="text/javascript" src="js/masterScript.js"></script>
 	<script type="text/javascript" src="js/mails.js"></script>
 	<script type="text/javascript" src="js/form.js"></script>
+	<script>
+		let pause = document.getElementById('pause-video');
+		let overlay = document.getElementById('overlay-black');
+
+		pause.addEventListener('click', function () {
+			document.getElementById('videoModal').pause();
+		})
+
+		overlay.addEventListener('click', function () {
+			document.getElementById('videoModal').pause();
+		})
+
+	</script>
 </body>
 
 </html>
