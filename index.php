@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ( isset($_SESSION['correousuario']) ){
-	//echo "Bienvenido ".$_SESSION['correousuario'];
+	echo "Bienvenido ".$_SESSION['correousuario'];
 } else{
 	header("location: login.php");
 }
@@ -49,7 +49,7 @@ if ( isset($_SESSION['correousuario']) ){
 	<header>
 
 		<a href="#portada" class='header-logo'>
-			<img src="./img/logo-header.svg" alt="logo">
+			<img src="./img/dark-logo.svg" alt="logo">
 		</a>
 
 		<nav>
@@ -98,7 +98,7 @@ if ( isset($_SESSION['correousuario']) ){
 				</article>
 
 				<article class="texto-portada">
-					<p>Te invitamos a ser parte nuevamente de los Premios Monarca y conocer a los ganadores de este año en Salón Barcelona el 22 de septiembre.</p>
+					<p>HP e Intel te invitan a ser parte nuevamente de los Premios Monarca y conocer a los ganadores de este año el 22 de Septiembre</p>
 					<div id="contador"></div>
 				</article>
 
@@ -111,14 +111,13 @@ if ( isset($_SESSION['correousuario']) ){
 
 	<div class="divider">
 		<img src="./img/intel-hp.svg" alt="logo divider">
-		<span>© Copyright 2022 HP Development Company. L.P.</span>
 	</div>
 
 	<section id="registro">
 
 		<div class="img-form">
 			<h2><span>Sección </span><span class="line-title"></span><span>de registro</span></h2>
-			<img src="img/trofeo-gris.png" alt="">
+			<img src="img/trofeos.png" alt="">
 		</div>
 
 		<div id="sib-form-container" class="sib-form-container">
@@ -164,7 +163,7 @@ if ( isset($_SESSION['correousuario']) ){
 								<div class="select-container radio">
 									<div class="entry__choice radio-option option-1">
 											<input id='radio-1' type="radio" name="PARTICIPACION" class="input_replaced" value="1" required>
-											<label for='radio-1' class="radio-button radio-label"></span><span>Si participaré en el evento:</label>
+											<label for='radio-1' class="radio-button radio-label"></span><span>Sí asistiré en el evento:</label>
 									</div>
 									<div class="entry__choice radio-option option-2">
 											<input id='radio-2' type="radio" name="PARTICIPACION" class="input_replaced" value="2" required>
@@ -297,7 +296,6 @@ if ( isset($_SESSION['correousuario']) ){
 
 	<div class="divider">
 		<img src="./img/intel-hp.svg" alt="logo divider">
-		<span>© Copyright 2022 HP Development Company. L.P.</span>
 	</div>
 
 	<section class="seccion" id="informacion">
@@ -322,7 +320,6 @@ if ( isset($_SESSION['correousuario']) ){
 
 	<div class="divider">
 		<img src="./img/intel-hp.svg" alt="logo divider">
-		<span>© Copyright 2022 HP Development Company. L.P.</span>
 	</div>
 
 	<section id="venue">
@@ -343,7 +340,6 @@ if ( isset($_SESSION['correousuario']) ){
 
 	<div class="divider">
 		<img src="./img/intel-hp.svg" alt="logo divider">
-		<span>© Copyright 2022 HP Development Company. L.P.</span>
 	</div>
 
 	<section id="conductores">
@@ -356,9 +352,7 @@ if ( isset($_SESSION['correousuario']) ){
 
 			<div class="info-conductor">
 
-				<div class="img-container">
-					<img src="img/hero-andrea.png" alt="andrea legarreta">
-				</div>
+				<div class="img-container"></div>
 
 				<div class="text-conductor">
 					<div>
@@ -376,7 +370,6 @@ if ( isset($_SESSION['correousuario']) ){
 
 		<div class="divider">
 			<img src="./img/intel-hp.svg" alt="logo divider">
-			<span>© Copyright 2022 HP Development Company. L.P.</span>
 		</div>
 
 		<article class="conductor videgaray">
@@ -387,9 +380,7 @@ if ( isset($_SESSION['correousuario']) ){
 
 			<div class="info-conductor">
 
-				<div class="img-container">
-					<img src="img/hero-videgaray.png" alt="andrea legarreta">
-				</div>
+				<div class="img-container"></div>
 
 				<div class="text-conductor">
 					<div>
@@ -424,7 +415,6 @@ if ( isset($_SESSION['correousuario']) ){
 
 	<div class="divider">
 		<img src="./img/intel-hp.svg" alt="logo divider">
-		<span>© Copyright 2022 HP Development Company. L.P.</span>
 	</div>
 
 	<section id="galeria">
@@ -449,7 +439,6 @@ if ( isset($_SESSION['correousuario']) ){
 
 	<footer class="divider">
 		<img src="./img/intel-hp.svg" alt="logo divider">
-		<span>© Copyright 2022 HP Development Company. L.P.</span>
 	</footer>
 
 	<div id='overlay-black' class="overlay overlay-black"></div>
