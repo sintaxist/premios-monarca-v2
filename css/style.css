@@ -850,6 +850,11 @@ nav a.active {
   -o-object-position: center;
      object-position: center;
 }
+#informacion > div {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
 #informacion > div > div {
   padding: 3% 8%;
   background-color: var(--light-blue-1);
@@ -880,7 +885,7 @@ nav a.active {
 }
 #venue > img {
   width: 55%;
-  max-height: 500px;
+  max-height: 550px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1069,6 +1074,8 @@ nav a.active {
 }
 .trofeo-container img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #galeria {
@@ -1375,6 +1382,7 @@ nav a.active {
   }
   #informacion > img {
     width: 50%;
+    max-height: 483px;
   }
   #venue {
     flex-direction: column-reverse;

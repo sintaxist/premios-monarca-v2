@@ -6,14 +6,14 @@ $db = new mysqli("localhost", "root", "root", "intel");
 
 if ( isset($_POST['submit']) ){
 
-	$correo = $_POST['correo'];
+	$campocorreo = $_POST['correo'];
+	$correo = strtolower("$campocorreo");
 
 	$resultados = mysqli_query($db, "SELECT * FROM usuarios WHERE LOWER(Correo) LIKE LOWER('$correo') " );
 	$row = mysqli_fetch_array($resultados);
 	$mailingresado = $row['2'];
 
 	if (!empty($correo)){
-
 		echo "Hola ".$mailingresado;
 
 		if($correo == $mailingresado){

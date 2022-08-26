@@ -287,7 +287,7 @@ if ( isset($_SESSION['correousuario']) ){
 					<input type="text" name="email_address_check" value="" class="input--hidden">
 					<input type="hidden" name="locale" value="en">
 
-					<span class="span-form">**Invitación personal e instransferible. Fecha limite de registro 14 de Septiembre</span>
+					<span class="span-form">**Invitación personal e instransferible. Fecha límite de registro 14 de Septiembre</span>
 				</form>
 			</div>
 		</div>
@@ -398,7 +398,6 @@ if ( isset($_SESSION['correousuario']) ){
 
 		<div class="divider">
 			<img src="./img/intel-hp.svg" alt="logo divider">
-			<span>© Copyright 2022 HP Development Company. L.P.</span>
 		</div>
 
 	</section>
