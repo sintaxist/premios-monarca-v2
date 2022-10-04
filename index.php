@@ -121,18 +121,18 @@ if ( isset($_SESSION['correousuario']) ){
 				<h1>"Gracias por acompañarnos a la Décimo sexta entrega de Premios Monarca”</h1>
 			</div>
 			<div class='links-thanks'>
-				<a href="">
+				<a href="#" id='videomemoria1'>
 					<img src="img/videomemoria.svg">
 					<p>Videomemoria</p>
 				</a>
-				<a href="">
+				<a href="memoria/index.html">
 					<img src="img/galeria.svg">
 					<p>Galería</p>
 				</a>
-				<a href="">
+				<!-- <a href="#" id='Timelapse'>
 					<img src="img/timelapse.svg">
 					<p>Timelapse</p>
-				</a>
+				</a> -->
 			</div>
 			<!-- <div id="error-message" class="sib-form-message-panel">
 				<div class="sib-form-message-panel__text sib-form-message-panel__text--center">

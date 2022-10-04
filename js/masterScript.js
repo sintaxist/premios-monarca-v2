@@ -64,6 +64,10 @@ $('#trigger-galeria').on('click', function () {
   appearModal1()
   return false;
 });
+$('#videomemoria1').on('click', function () {
+  appearModal2()
+  return false;
+});
 $('#trigger-video').on('click', function () {
   appearModal2()
   return false;
