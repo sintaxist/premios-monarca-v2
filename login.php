@@ -40,7 +40,7 @@
 <section id="login-section">
 	<div class="login-container">
         <img src="./img/logo-header.svg" alt="logo">
-		<form method="post" action="sesion.php" id="input-validate">
+		<form method="post" action="sesion-server.php" id="input-validate">
             <h2>Ingresa tu correo par acceder a la pagina</h2>
 			<div id="input-container">
                 <input id="mail-validar" type="text" name="correo" required class="input-login">
