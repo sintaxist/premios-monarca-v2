@@ -99,7 +99,7 @@ if ( isset($_SESSION['correousuario']) ){
 
 				<article class="texto-portada">
 					<p>HP e Intel te invitan a ser parte nuevamente de los Premios Monarca y conocer a los ganadores de este año el 22 de Septiembre</p>
-					<div id="contador"></div>
+					<!-- <div id="contador"></div> -->
 				</article>
 
 				<article class="ubicacion-portada">
@@ -109,19 +109,32 @@ if ( isset($_SESSION['correousuario']) ){
 			</div>
 	</section>
 
-	<div class="divider">
-		<img src="./img/intel-hp.svg" alt="logo divider">
-	</div>
-
 	<section id="registro">
 
 		<div class="img-form">
-			<h2><span>Sección </span><span class="line-title"></span><span>de registro</span></h2>
+			<!-- <h2><span>Sección </span><span class="line-title"></span><span>de registro</span></h2> -->
 			<img src="img/trofeos.png" alt="">
 		</div>
 
 		<div id="sib-form-container" class="sib-form-container">
-			<div id="error-message" class="sib-form-message-panel">
+			<div class='thanks'>
+				<h1>"Gracias por acompañarnos a la Décimo sexta entrega de Premios Monarca”</h1>
+			</div>
+			<div class='links-thanks'>
+				<a href="">
+					<img src="img/videomemoria.svg">
+					<p>Videomemoria</p>
+				</a>
+				<a href="">
+					<img src="img/galeria.svg">
+					<p>Galería</p>
+				</a>
+				<a href="">
+					<img src="img/timelapse.svg">
+					<p>Timelapse</p>
+				</a>
+			</div>
+			<!-- <div id="error-message" class="sib-form-message-panel">
 				<div class="sib-form-message-panel__text sib-form-message-panel__text--center">
 					<svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
 						<path
@@ -165,16 +178,10 @@ if ( isset($_SESSION['correousuario']) ){
 											<input id='radio-1' type="radio" name="PARTICIPACION" class="input_replaced" value="1" required>
 											<label for='radio-1' class="radio-button radio-label"></span><span>Sí asistiré en el evento:</label>
 									</div>
-									<div class="entry__choice radio-option option-2">
+									<div class="entry__choice radio-option option-1">
 											<input id='radio-2' type="radio" name="PARTICIPACION" class="input_replaced" value="2" required>
 											<label for='radio-2' class="radio-button radio-label"></span><span>No me es posible participar:</label>
 									</div>
-									<!-- <div class="entry__choice radio-option option-2">
-										<label>
-											<input type="radio" name="PARTICIPACION" class="input_replaced" value="2" required>
-											<span class="radio-button"></span><span>No me es posible participar:</span>
-										</label>
-									</div> -->
 								</div>
 							</div>
 
@@ -289,7 +296,7 @@ if ( isset($_SESSION['correousuario']) ){
 
 					<span class="span-form">**Invitación personal e instransferible. Fecha límite de registro 14 de Septiembre</span>
 				</form>
-			</div>
+			</div> -->
 		</div>
 
 	</section>

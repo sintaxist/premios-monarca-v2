@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$db = new mysqli("localhost", "root", "root", "intel");
+$db = new mysqli("localhost", "root", "root", "Intel");
 
 
 if ( isset($_POST['submit']) ){

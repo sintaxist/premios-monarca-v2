@@ -468,13 +468,11 @@ nav{
 }
 .texto-portada{
 	padding: 4% 0px;
-	padding-bottom: 0px;
 	background-color: var(--light-blue-3);
 	p{
 		font-size: var(--font-3);
 		padding:  0px 8%;
 		line-height: calc(var(--font-3) + 7px);
-		margin-bottom: 15px;
 	}
 }
 #contador{
@@ -508,12 +506,13 @@ nav{
 	height: fit-content;
 }
 .img-form{
-	width: 40%;
+	width: 60%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--light-blue-1);
+	padding: 3% 0px;
 	h2 {
 		width: 100%;
 		font-size: var(--font-0);
@@ -541,16 +540,50 @@ nav{
 		width: 92%;
 		max-width: 500px;
 		// mix-blend-mode: multiply;
-		margin: 0px 4%;
+		margin: auto;
 	}
 }
 #sib-form-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 61%;
-    margin: auto;
-	// height: 0px;
-	padding: 3% 4%;
 	overflow: hidden;
 	transition: all .3s;
+	text-align: center;
+	.thanks{
+		background-color: var(--light-blue-2);
+		padding: 6%;
+	}
+	h1{
+		font-size: var(--font-2);
+		text-align: start;
+	}
+	h2{
+		font-size: var(--font-2);
+	}
+}
+.links-thanks{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto 0px;
+	padding: 3%;
+	gap: var(--margin-30);
+	a{
+		width: 30%;
+		text-decoration: none;
+		color: var(--dark);
+		border-radius: 100px;
+		font-size: var(--font-3);
+		img{
+			border: 2px solid var(--dark);
+			height: 50px;
+			padding: 23px 25px;
+			border-radius: 100px;
+			margin-bottom: 15px;
+		}
+	}
 }
 #sib-container{
     height: 100%;
@@ -1199,7 +1232,6 @@ nav{
 	cursor: pointer;
 }
 
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++    MEDIA QUERIES    +++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -1285,12 +1317,11 @@ nav{
 	.img-form{
 		width: 100%;
 		img{
-			max-width: 200px;
-			padding-bottom: 4%;
+			max-width: 300px;
 		}
 	}
 	#sib-form-container{
-		width: 92%;
+		width: 100%;
 	}
 	.divider{
 		gap: 40px;
@@ -1401,5 +1432,10 @@ nav{
 	.log-btn{
 		width: 100%;
 		padding: 10px 0px;
+	}
+}
+@media (max-width:350px) {
+	.links-thanks{
+		flex-direction: column;
 	}
 }
